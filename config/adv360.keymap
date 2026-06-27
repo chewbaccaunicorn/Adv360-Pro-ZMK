@@ -26,11 +26,11 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &none                                                                             &mo 3        &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS
-&kp TAB    &kp Q      &kp W     &kp E     &kp R      &kp T   &none                                                                             &none        &kp Y   &kp U   &kp I      &kp O     &kp P     &kp BSLH
-&kp ESC    &kp A      &kp S     &kp D     &kp F      &kp G   &none      &kp LCTRL        &kp LALT                      &kp LGUI   &kp RCTRL    &none        &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z      &kp X     &kp C     &kp V      &kp B                               &kp HOME                      &kp PG_UP                            &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
-&mo 2      &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &lt 2 DEL  &lt 1 BACKSPACE  &kp LS(LA(LC(LEFT_GUI)))      &kp PG_DN  &lt 1 SPACE  &lt 2 ENTER          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &mo 2
+&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &none                                                             &mo 3        &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS
+&kp TAB    &kp Q      &kp W     &kp E     &kp R      &kp T   &none                                                             &none        &kp Y   &kp U   &kp I      &kp O     &kp P     &kp BSLH
+&kp ESC    &kp A      &kp S     &kp D     &kp F      &kp G   &none      &kp LCTRL        &kp LALT      &kp LGUI   &kp RCTRL    &none        &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
+&kp LSHFT  &kp Z      &kp X     &kp C     &kp V      &kp B                               &kp HOME      &kp PG_UP                            &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
+&mo 2      &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &lt 2 DEL  &lt 1 BACKSPACE  &mo 4         &kp PG_DN  &lt 1 SPACE  &lt 2 ENTER          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &mo 2
             >;
         };
 
@@ -64,6 +64,17 @@
 &studio_unlock  &none         &none         &none         &none         &none         &none        &none  &none      &bt BT_CLR  &none       &stp STP_BAT     &none  &none       &none       &none  &none  &none
 &none           &none         &none         &none         &macro_ver    &none                             &none      &none                                    &none  &none       &none       &none  &none  &none
 &none           &none         &none         &none         &none                       &none        &none  &none      &none       &bl BL_TOG  &rgb_ug RGB_TOG         &bl BL_INC  &bl BL_DEC  &none  &none  &none
+            >;
+        };
+
+        layer_4 {
+            display-name = "Base";
+            bindings = <
+&none  &kp LG(LA(LC(LS(N1))))  &kp LG(LC(LA(LS(N2))))  &kp LG(LC(LA(LS(N3))))  &kp LG(LC(LA(LS(N4))))  &kp LG(LC(LA(LS(N5))))  &none                                                             &none        &kp LG(LC(LA(LS(N6))))  &kp LG(LC(LA(LS(N7))))  &kp LG(LA(LC(LS(N8))))  &kp LG(LC(LA(LS(N9))))  &kp LG(LC(LA(LS(N0))))  &none
+&none  &kp LS(LG(LA(LC(Q))))   &kp LS(LA(LC(LG(W))))   &kp LS(LA(LC(LG(E))))   &kp LS(LA(LC(LG(R))))   &kp LS(LA(LC(LG(T))))   &none                                                             &none        &kp LG(LC(LA(LS(Y))))   &kp LG(LC(LA(LS(U))))   &kp LG(LC(LA(LS(I))))   &kp LG(LC(LA(LS(O))))   &kp LG(LC(LA(LS(P))))   &none
+&none  &kp LS(LA(LC(LG(A))))   &kp LS(LA(LC(LG(S))))   &kp LS(LA(LC(LG(D))))   &kp LS(LA(LC(LG(F))))   &kp LS(LC(LA(LG(G))))   &none      &kp LCTRL        &kp LALT      &kp LGUI   &kp RCTRL    &none        &kp LG(LA(LC(LS(H))))   &kp LG(LC(LA(LS(J))))   &kp LG(LC(LA(LS(K))))   &kp LC(LG(LA(LS(L))))   &none                   &none
+&none  &kp LG(LC(LA(LS(Z))))   &kp LG(LC(LS(LA(X))))   &kp LG(LC(LA(LS(C))))   &kp LG(LC(LA(LS(V))))   &kp LG(LC(LA(LS(B))))                               &kp HOME      &kp PG_UP                            &kp LG(LC(LA(LS(N))))   &kp LG(LC(LA(LS(M))))   &none                   &none                   &none                   &none
+&none  &none                   &none                   &none                   &none                                           &lt 2 DEL  &lt 1 BACKSPACE  &none         &kp PG_DN  &lt 1 SPACE  &lt 2 ENTER                          &none                   &none                   &none                   &none                   &none
             >;
         };
     };
