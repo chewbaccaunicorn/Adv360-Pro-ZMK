@@ -22,7 +22,7 @@
         enterLayerSwitch: enterLayerSwitch {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp ENTER &tog 6>;
+            bindings = <&tog 6 &kp ENTER>;
             label = "ENTERLAYERSWITCH";
         };
 
